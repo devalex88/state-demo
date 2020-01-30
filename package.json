@@ -1,0 +1,17 @@
+{
+  "name": "state-demo",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@xstate/test": "^0.3.0",
+    "esm": "^3.2.25",
+    "jest": "^25.1.0",
+    "puppeteer": "^2.1.0",
+    "xstate": "^4.7.7"
+  }
+}
