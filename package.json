@@ -2,14 +2,18 @@
   "name": "state-demo",
   "version": "1.0.0",
   "description": "",
+  "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@xstate/test": "^0.3.0",
+    "ejs": "^3.0.1",
     "esm": "^3.2.25",
+    "express": "^4.17.1",
     "jest": "^25.1.0",
     "puppeteer": "^2.1.0",
     "xstate": "^4.7.7"
