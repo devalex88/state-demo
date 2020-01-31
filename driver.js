@@ -8,7 +8,7 @@ const driver = {
     },
 
     result: async page => {
-        return await page.waitFor('#resultStats')
+        await page.waitFor('#resultStats')
     },
 
     external_website: async page => {
@@ -16,7 +16,7 @@ const driver = {
     },
 
     calculator: async page => {
-        return await page.waitFor('[data-async-context="query:calculator"]')
+        await page.waitFor('[data-async-context="query:calculator"]')
     },
 
     calculator_error: async page => {
@@ -37,8 +37,9 @@ const driver = {
     SEARCH_LUCKY: async page => {
         await page.type('input[name=q]', 'vnexpress.net')
         await page.keyboard.press('Escape')
-        await page.click('#tsf > div:nth-child(2) > div.A8SBwf > div.FPdoLc.tfB0Bf > center > input.RNmpXc')
-        await page.waitFor(4000)
+        await page.waitFor(2000)
+        await page.click('input[value="Xem trang đầu tiên tìm được"]')
+        await page.waitFor(2000)
     },
 
     SEARCH_CALCULATOR: async page => {
@@ -51,7 +52,7 @@ const driver = {
         await page.click('#cwmcwd > div > div > div.SKWP2e > div > table.ElumCf > tbody > tr:nth-child(2) > td:nth-child(4) > div > div')
         await page.click('#cwmcwd > div > div > div.SKWP2e > div > table.ElumCf > tbody > tr:nth-child(5) > td:nth-child(1) > div > div')
         await page.click('#cwmcwd > div > div > div.SKWP2e > div > table.ElumCf > tbody > tr:nth-child(5) > td:nth-child(3) > div > div')
-        await page.waitFor(4000)
+        await page.waitFor(2000)
     }
 }
 
