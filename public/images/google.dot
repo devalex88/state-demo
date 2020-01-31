@@ -1,0 +1,23 @@
+digraph {
+
+    node [style=filled]
+    edge [fontsize=8]
+
+    blank
+    home
+    result
+    external_website
+    calculator
+    calculator_error
+ 
+    blank -> home [label="VISIT_HOME"]
+    home -> result [label="SEARCH"]
+    home -> external_website [label="SEARCH_LUCKY"]
+    home -> calculator [label="SEARCH_CALCULATOR"]
+    result -> result [label="SEARCH"]
+    result -> calculator [label="SEARCH_CALCULATOR"]
+    external_website -> home [label="VISIT_HOME"]
+    calculator -> calculator_error [label="ZERO_DIVIDED_BY_ZERO"]
+    calculator -> result [label="SEARCH"]
+    calculator_error -> result [label="SEARCH"]
+}

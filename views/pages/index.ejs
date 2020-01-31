@@ -8,6 +8,29 @@
 </head>
 
 <body>
+    <div>
+        <h1>App's map (by BAs & QAs)</h1>
+        <p>
+            <img src="images/google.png" />
+        </p>
+    </div>
+    <div>
+        <h1>All paths (calculated by machines)</h1>
+        <p>
+            <ul>
+                <% paths.forEach(function(path) { %>
+                    <li><%= path %></li>
+                <% }); %>
+            </ul>
+        </p>
+    </div>
+    <div>
+        <h1>Test results (driver is written by developers)</h1>
+        <p></p>
+        <p>
+            <img src="images/test-results.png" />
+        </p>
+    </div>
     <script src="js/script.js"></script>
 </body>
 
